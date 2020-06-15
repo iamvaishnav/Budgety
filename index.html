@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7bb89ac4f.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="top-container">
+        <div class="budget-overview">
+            <h3>Available Budget in <span class="budget-month">May 2020</span></h3>
+            <span class="budget-value">1200</span>
+            <span class="income-box"><h2>Income</h2>
+                <span class="income-value">1200</span>
+            </span>
+            <span class="expense-box"><h2>Expense</h2>
+                <span class="expense-value-percentage">&nbsp;</span><span class="expense-value">1200</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="middle-container">
+        <div class="div-1">
+            <select class="type-selector">
+            <option value="inc" selected>+</option>
+            <option value="exp">-</option>
+             </select>
+        </div>
+        <div class="div-2"><input type="text" class="description" placeholder="Add Description"></div>
+        <div class="div-3"> <input type="number" class="value" placeholder="Value"></div>
+        <div class="div-4"><button class="add-btn"><ion-icon name="checkmark-circle-outline"></ion-icon></button></div>
+
+    </div>
+
+
+    <div class="bottom-container">
+        <div class="income">
+            <div class="item-header">Income </div>
+            <!--
+            <div class="item " id="item-0">
+                <div class="item-desc">Sold Car</div>
+
+                <div class="item-delete"><button class="delete-btn"><ion-icon name="close-circle-outline"></ion-icon></button></div>
+                <div class="item-value-container">+ 3600</div>
+
+            </div>
+
+
+            <div class="item " id="item-2">
+                <div class="item-desc">Salary</div>
+
+                <div class="item-delete"><button class="delete-btn"><ion-icon name="close-circle-outline"></ion-icon></button></div>
+                <div class="item-value-container">+ 4000</div>
+
+            </div>
+
+
+
+
+
+            <div class="item" id="item-1">
+                <div class="item-desc">Sold Bike</div>
+            </div>
+
+           -->
+        </div>
+        <div class="expense">
+            <div class="item-header">Expense</div>
+            <!--
+             <div class="item" id="item-0">
+                <div class="item-desc">Bought iPad</div>
+                <div class="item-delete"><button class="delete-btn"><ion-icon name="close-circle-outline"></ion-icon></button></div>
+                <div class="item-value-percentage">25%</div>
+                <div class="item-value-container">- 900</div>
+            </div>
+
+
+          -->
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="engine.js"></script>
+
+</body>
