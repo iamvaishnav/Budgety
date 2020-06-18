@@ -22,7 +22,6 @@
 .budget-overview h3 {
     color: white;
     font-size: 22px;
-    text-transform: uppercase;
     padding: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -40,7 +39,7 @@
     font-size: 44px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .income-box h2,
@@ -58,7 +57,7 @@
 
 .income-box {
     display: inline-block;
-    background: rgb(105, 209, 113);
+    background: rgb(89, 224, 172);
     width: 100%;
     padding: 2px;
     transform: translateY(10px)
@@ -291,4 +290,12 @@
 
 .item:nth-child(2) {
     border-top: 1px solid #e7e7e7;
+}
+
+.red {
+    color: #FF5049 !important;
+}
+
+.red-focus:focus {
+    border: 1px solid #FF5049 !important;
 }
