@@ -258,14 +258,12 @@ var uiController = (function() {
 
         changedType: function() {
 
-            var fields = document.querySelectorAll(
-                DOMStrings.inputType + ',' +
-                DOMStrings.inputDescription + ',' +
-                DOMStrings.inputValue);
 
-            nodeListForEach(fields, function(cur) {
-                cur.classList.toggle('red-focus');
+            var fields = document.querySelectorAll(DOMStrings.inputType + ',' + DOMStrings.inputDescription + ',' + DOMStrings.inputValue);
+            nodeListForEach(fields, function(current) {
+                current.classList.toggle('red-focus');
             });
+
 
             document.querySelector(DOMStrings.inputBtn).classList.toggle('red');
 
