@@ -256,7 +256,20 @@ var uiController = (function() {
             document.querySelector(DOMStrings.dateLabel).textContent = months[monthNo] + ' ' + year;
         },
 
+        changedType: function() {
 
+            var fields = document.querySelectorAll(
+                DOMStrings.inputType + ',' +
+                DOMStrings.inputDescription + ',' +
+                DOMStrings.inputValue);
+
+            nodeListForEach(fields, function(cur) {
+                cur.classList.toggle('red-focus');
+            });
+
+            document.querySelector(DOMStrings.inputBtn).classList.toggle('red');
+
+        },
 
     }
 
@@ -288,7 +301,8 @@ var inputController = (function(budgetCtrl, uiCtrl) {
                 addItem();
             }
         })
-        document.querySelector(DOM.container).addEventListener('click', deleteItem)
+        document.querySelector(DOM.container).addEventListener('click', deleteItem);
+        document.querySelector(DOM.inputType).addEventListener('change', uiCtrl.changedType);
 
     }
 
