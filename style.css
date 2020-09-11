@@ -13,7 +13,7 @@
 .top-container {
     display: flex;
     justify-content: center;
-    background: url(landscape-5055384_1920.jpg) fixed center center;
+    background: url(neonbrand-AOJGuIJkoBc-unsplash.jpg) fixed left center no-repeat;
     align-items: center;
     flex-wrap: wrap;
     height: 270px;
@@ -114,6 +114,7 @@
     transition: border 0.3s;
     margin-right: 12px;
     text-align: center;
+    outline: none;
 }
 
 .description,
@@ -173,29 +174,6 @@
     padding: 8px;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-}
-
-@media only screen and (max-width:500px) {
-    .income,
-    .expense {
-        width: 100%;
-    }
-    .middle-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .type-selector {
-        width: 80vw;
-        margin-bottom: 12px;
-    }
-    .value,
-    .description {
-        width: 80vw;
-        margin-bottom: 12px;
-    }
-    .add-btn {
-        margin-left: 4px;
-    }
 }
 
 .item-value-container {
@@ -314,4 +292,82 @@
 
 .red-focus:focus {
     border: 1px solid #FF5049 !important;
+}
+
+
+/* -----------Media Queries----------*/
+
+@media only screen and (max-width:435px) {
+    .income,
+    .expense {
+        width: 100%;
+    }
+    .middle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .type-selector {
+        width: 80vw;
+        margin-bottom: 12px;
+    }
+    .value,
+    .description {
+        width: 80vw;
+        margin-bottom: 12px;
+    }
+    .add-btn {
+        margin-left: 4px;
+    }
+    .budget-overview h3 {
+        font-size: 18px;
+    }
+    .income-box h2,
+    .expense-box h2 {
+        font-size: 18px;
+        padding: 8px;
+        padding-left: 12px;
+        transform: translateY(7px);
+    }
+    .income-box {
+        width: 80%;
+    }
+    .expense-box {
+        width: 80%;
+    }
+    .bottom-container {
+        width: 90%;
+        margin: auto;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width:571px) and (min-width:435px) {
+    .income,
+    .expense {
+        width: 100%;
+    }
+    .middle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .type-selector {
+        width: 80vw;
+        margin-bottom: 12px;
+    }
+    .value,
+    .description {
+        width: 80vw;
+        margin-bottom: 12px;
+    }
+    .add-btn {
+        margin-left: 4px;
+    }
+}
+
+@media only screen and (max-width:783px) and (min-width:572px) {
+    .bottom-container {
+        width: 100%;
+        margin: auto;
+        padding-top: 40px;
+    }
 }
